@@ -52,7 +52,6 @@ Project Structure
 └── VERSION
 
 ```
-Check out my latest research project, which successfully applied the `cookiecutter` philosophy: [SEMIC: an efficient surface energy and mass balance model applied to the Greenland ice sheet](https://gitlab.pik-potsdam.de/krapp/semic-project).
 
 License
 -------
