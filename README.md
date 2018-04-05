@@ -1,12 +1,15 @@
 Reproducible Pen Test Reporting
 ====================
 
-A boilerplate for creating reproducible and consistent note taking structure to put together pen test reports. This project was designed after frustrations with KeepNote and wanting to create a template to keep my reporting more organized through constant note taking. 
+A boilerplate for creating reproducible and consistent note taking structure to put together pen test reports. This project was designed after frustrations with KeepNote and wanting to create a template to keep my reporting more organized through constant note taking.
 
 Credit
 ------
 > Credit for the original template this was designed around [Cookiecutter Data Science](https://github.com/drivendata/cookiecutter-data-science). The philosophy of [Cookiecutter Data Science](https://github.com/drivendata/cookiecutter-data-science): *A logical, reasonably standardized, but flexible project structure for doing and sharing data science work.*
+
+
 > Inspiration for this goes to [James Hall](https://411hall.github.io/OSCP-Preparation/) after seeing his template and being impressed. 
+
 
 Contributing
 ------------
@@ -18,9 +21,14 @@ Install `cookiecutter` command line: `pip install cookiecutter`
 
 Usage
 -----
-To start a new pen test project:
+### To start a new pen test project:
 
-`cookiecutter gh:sethstansberry/cookiecutter-offsec-cookies`
+`cookiecutter gh:seth-stansberry/pen-cookie`
+
+### Complete report.
+
+### To Display the newly crafted book/report as a webpage:
+`gitbook serve https://github.com/GitbookIO/gitbook`
 
 Project Structure
 -----------------
@@ -31,7 +39,7 @@ Project Structure
 ├── LICENSE
 ├── README.md
 ├── bin                <- Your compiled payloads, scripts can be stored here (not tracked by git)
-├── config             <- Configuration files, e.g., for doxygen or for your model if needed
+├── config             <- Configuration files, e.g., yaml for custom scripts or export values for metasploit if needed
 ├── data
 │   ├── external       <- Data from third party sources.
 │   ├── interim        <- Intermediate data that has been transformed.
@@ -49,6 +57,23 @@ Project Structure
     └── visualization  <- Scripts for visualisation of your results, e.g., matplotlib, ggplot2 related.
 ```
 
+.
+├── bin                    <- Your compiled payloads, scripts can be stored here (not tracked by git)
+├── config		   <- Configuration files, e.g., yaml for custom scripts or export values for metasploit if needed
+├── cookiecutter.json
+├── LICENSE
+├── README.md
+├── reports                <- Reporting structure based on a 5 step process outlined below. Setup as Gitbook.
+│   ├── part1_enumeration  <- Inital footprinting with tools like nmap, dirb, and nikto.
+│   ├── part2_exploitation <- Document whatever exploit, CVE, or feature was used to exploit host.
+│   ├── part3_post_exploit <- List of enumerated services, applications, scheduled tasks, ec.
+│   ├── part4_privesc      <- Privesc vulnerability, exploit code, and proof.
+│   ├── part5_lootA	   <- Hashes, passwords, and flags- oh my!
+│   └── SUMMARY.md	   <- A kind of table of contents.
+├── report.yaml
+└── VERSION
+
+```
 Check out my latest research project, which successfully applied the `cookiecutter` philosophy: [SEMIC: an efficient surface energy and mass balance model applied to the Greenland ice sheet](https://gitlab.pik-potsdam.de/krapp/semic-project).
 
 License
