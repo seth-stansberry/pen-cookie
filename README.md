@@ -21,13 +21,14 @@ Install `cookiecutter` command line: `pip install cookiecutter`
 
 Usage
 -----
-### To start a new pen test project:
+1) ### To start a new pen test project:
 
 `cookiecutter gh:seth-stansberry/pen-cookie`
 
-### Complete report.
+2) ### Complete report.
+Use vim, nano, or similar.
 
-### To Display the newly crafted book/report as a webpage:
+3) ### To Display the newly crafted book/report as a webpage:
 `gitbook serve https://github.com/GitbookIO/gitbook`
 
 Project Structure
@@ -35,31 +36,8 @@ Project Structure
 
 ```
 .
-├── AUTHORS.md
-├── LICENSE
-├── README.md
-├── bin                <- Your compiled payloads, scripts can be stored here (not tracked by git)
-├── config             <- Configuration files, e.g., yaml for custom scripts or export values for metasploit if needed
-├── data
-│   ├── external       <- Data from third party sources.
-│   ├── interim        <- Intermediate data that has been transformed.
-│   ├── processed      <- The final, canonical data sets for modeling.
-│   └── raw            <- The original, immutable data dump.
-├── docs               <- Documentation, e.g., doxygen or scientific papers (not tracked by git)
-├── notebooks          <- Ipython or R notebooks
-├── reports            <- For a manuscript source, e.g., LaTeX, Markdown, etc., or any project reports
-│   └── figures        <- Figures for the manuscript or reports
-└── src                <- Source code for this project
-    ├── data           <- scripts and programs to process data
-    ├── external       <- Any external source code, e.g., pull other git projects, or external libraries
-    ├── models         <- Source code for your own model
-    ├── tools          <- Any helper scripts go here
-    └── visualization  <- Scripts for visualisation of your results, e.g., matplotlib, ggplot2 related.
-```
-
-.
 ├── bin                    <- Your compiled payloads, scripts can be stored here (not tracked by git)
-├── config		   <- Configuration files, e.g., yaml for custom scripts or export values for metasploit if needed
+├── config		           <- Configuration files, e.g., yaml for custom scripts or export values for metasploit if needed
 ├── cookiecutter.json
 ├── LICENSE
 ├── README.md
@@ -68,8 +46,8 @@ Project Structure
 │   ├── part2_exploitation <- Document whatever exploit, CVE, or feature was used to exploit host.
 │   ├── part3_post_exploit <- List of enumerated services, applications, scheduled tasks, ec.
 │   ├── part4_privesc      <- Privesc vulnerability, exploit code, and proof.
-│   ├── part5_lootA	   <- Hashes, passwords, and flags- oh my!
-│   └── SUMMARY.md	   <- A kind of table of contents.
+│   ├── part5_lootA	       <- Hashes, passwords, and flags- oh my!
+│   └── SUMMARY.md	       <- A kind of table of contents.
 ├── report.yaml
 └── VERSION
 
