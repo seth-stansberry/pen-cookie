@@ -1,4 +1,4 @@
-Reproducible Pen Test Reporting
+Gitbook based Pen Test Reporting
 ====================
 
 A boilerplate for creating reproducible and consistent note taking structure to put together pen test reports. This project was designed after frustrations with KeepNote and wanting to create a template to keep my reporting more organized through constant note taking.
