@@ -1,8 +1,10 @@
-Gitbook based Pen Test Reporting
+
+Sphynx based Pen Test Reporting
 ====================
 
 A boilerplate for creating reproducible and consistent note taking structure to put together pen test reports. This project was designed after frustrations with KeepNote and wanting to create a template to keep my reporting more organized through constant note taking.
 
+Note: Project is under construction migrating from Gitbook to Sphynx right now. README.md is being updated as well.
 Credit
 ------
 > Credit for the original template this was designed around [Cookiecutter Data Science](https://github.com/drivendata/cookiecutter-data-science). The philosophy of [Cookiecutter Data Science](https://github.com/drivendata/cookiecutter-data-science): *A logical, reasonably standardized, but flexible project structure for doing and sharing data science work.*
@@ -41,8 +43,8 @@ Project Structure
 ├── cookiecutter.json
 ├── LICENSE
 ├── README.md
-├── reports                <- Reporting structure based on a 5 step process outlined below. Setup as Gitbook.
-│   ├── part1_enumeration  <- Inital footprinting with tools like nmap, dirb, and nikto.
+├── reports                <- Reporting structure based on a 5 step process outlined below. Setup as Sphinx.
+│   ├── part1_enumeration  <- Initial footprinting with tools like nmap, dirb, and nikto.
 │   ├── part2_exploitation <- Document whatever exploit, CVE, or feature was used to exploit host.
 │   ├── part3_post_exploit <- List of enumerated services, applications, scheduled tasks, ec.
 │   ├── part4_privesc      <- Privesc vulnerability, exploit code, and proof.
